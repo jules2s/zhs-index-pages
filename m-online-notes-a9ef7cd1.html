@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
+    <title>MK体育 · 使用说明与平台概览</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", sans-serif;
+            background-color: #f5f7fa;
+            color: #1e293b;
+            line-height: 1.7;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        /* 深色头图区域 */
+        .hero {
+            background: linear-gradient(145deg, #0b1a2e 0%, #1b2f4a 100%);
+            color: #eef2f6;
+            padding: 3.2rem 1.5rem 2.6rem;
+            text-align: center;
+            border-bottom: 4px solid #3b82f6;
+        }
+        .hero h1 {
+            font-weight: 600;
+            font-size: 2.2rem;
+            letter-spacing: 0.02em;
+            margin-bottom: 0.6rem;
+        }
+        .hero .subhead {
+            max-width: 720px;
+            margin: 0 auto 0.4rem;
+            font-size: 1.05rem;
+            color: #bdd3f0;
+            line-height: 1.6;
+        }
+        .hero .badge {
+            display: inline-block;
+            margin-top: 0.8rem;
+            background: rgba(59, 130, 246, 0.2);
+            border: 1px solid #3b82f6;
+            border-radius: 40px;
+            padding: 0.25rem 1.2rem;
+            font-size: 0.85rem;
+            color: #b6d4fe;
+        }
+        /* 主内容区 – 浅色 */
+        .main-content {
+            flex: 1;
+            max-width: 1000px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 2.6rem 1.8rem 3.5rem;
+            background: #ffffff;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.02);
+        }
+        /* 强调色 – 链接、装饰 */
+        a {
+            color: #2563eb;
+            text-decoration: none;
+            border-bottom: 1px dotted #94a3b8;
+            transition: border-color 0.2s, color 0.2s;
+        }
+        a:hover {
+            color: #1d4ed8;
+            border-bottom-color: #2563eb;
+        }
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 2.2rem 0 0.8rem;
+            padding-bottom: 0.3rem;
+            border-bottom: 2px solid #e2e8f0;
+            color: #0f172a;
+        }
+        h2:first-of-type {
+            margin-top: 0;
+        }
+        h3 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin: 1.6rem 0 0.4rem;
+            color: #1e293b;
+        }
+        p {
+            margin-bottom: 1rem;
+        }
+        ul {
+            margin: 0.5rem 0 1.2rem 1.6rem;
+        }
+        li {
+            margin-bottom: 0.45rem;
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 1.2rem;
+            margin: 1.6rem 0 1.2rem;
+        }
+        .card {
+            background: #f8fafc;
+            border-radius: 12px;
+            padding: 1.2rem 1rem;
+            border-left: 4px solid #3b82f6;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.02);
+        }
+        .card h4 {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+            color: #0f172a;
+            font-size: 1rem;
+        }
+        .card p {
+            font-size: 0.9rem;
+            color: #334155;
+            margin-bottom: 0;
+        }
+        .scenario-box {
+            background: #f1f5f9;
+            border-radius: 16px;
+            padding: 1.4rem 1.6rem;
+            margin: 1.6rem 0;
+        }
+        .scenario-box p:last-child {
+            margin-bottom: 0;
+        }
+        .faq-item {
+            margin: 1rem 0;
+            padding: 0.6rem 0;
+            border-bottom: 1px solid #e9edf2;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-question {
+            font-weight: 600;
+            margin-bottom: 0.2rem;
+        }
+        .faq-answer {
+            font-size: 0.95rem;
+            color: #334155;
+        }
+        .tip-note {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.5rem;
+            background: #fef9e7;
+            padding: 0.8rem 1rem;
+            border-radius: 10px;
+            border-left: 4px solid #f59e0b;
+            margin: 1.6rem 0 0.5rem;
+            font-size: 0.95rem;
+        }
+        .tip-note strong {
+            color: #92400e;
+        }
+        .footer-note {
+            margin-top: 2.8rem;
+            font-size: 0.85rem;
+            color: #64748b;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 1.8rem;
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            .hero {
+                padding: 2.2rem 1rem 1.8rem;
+            }
+            .hero h1 {
+                font-size: 1.7rem;
+            }
+            .main-content {
+                padding: 1.6rem 1rem 2.5rem;
+            }
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 深色头图 -->
+    <header class="hero">
+        <h1>MK体育 · 平台说明</h1>
+        <p class="subhead">
+            一份清晰的使用引导与特点概览，帮助你快速了解 MK体育 的服务界面与常规操作路径。
+        </p>
+        <span class="badge">产品说明 · 稳定入口</span>
+    </header>
+
+    <!-- 浅色正文区 -->
+    <div class="main-content">
+
+        <!-- 摘要 -->
+        <h2>概览摘要</h2>
+        <p><strong>MK体育</strong> 是一个专注于体育资讯与互动体验的平台，提供赛事数据、动态信息以及社区交流入口。页面采用模块化布局，无论是通过移动端还是桌面浏览器，均能获得较为一致的浏览体验。本说明页整理了平台的亮点功能、适用场景以及一些使用上的小建议，方便你快速上手。</p>
+
+        <!-- 亮点：卡片式 -->
+        <h2>平台亮点</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h4>📊 数据聚合</h4>
+                <p>整合多项主流赛事的实时数据与历史记录，页面结构清晰，便于快速查阅。</p>
+            </div>
+            <div class="card">
+                <h4>🖥️ 响应适配</h4>
+                <p>针对手机、平板与桌面进行了布局优化，信息层级明确，减少频繁缩放。</p>
+            </div>
+            <div class="card">
+                <h4>🔗 直达通道</h4>
+                <p>直接访问 <a href="https://m-online-mksports.com">MK体育</a> 即可进入主界面，无需额外跳转或注册引导。</p>
+            </div>
+            <div class="card">
+                <h4>📋 信息分类</h4>
+                <p>赛事、资讯、数据等板块独立展示，方便按兴趣选择关注的内容区域。</p>
+            </div>
+        </div>
+
+        <!-- 使用建议 + 场景 -->
+        <h2>使用建议与常见场景</h2>
+        <div class="scenario-box">
+            <h3 style="margin-top:0;">日常浏览</h3>
+            <p>打开 <a href="https://m-online-mksports.com">MK体育</a> 后，首页默认展示近期热门赛事与焦点新闻。你可以根据顶部导航切换至不同分类。建议初次使用时先大致浏览各板块，熟悉信息排布方式。</p>
+            <h3>赛事跟踪</h3>
+            <p>如果关注特定联赛或队伍，可以利用页面内的筛选或搜索功能（部分板块提供）。数据页面通常以表格或卡片形式呈现，更新频率稳定。</p>
+            <h3>移动端快捷入口</h3>
+            <p>将 <a href="https://m-online-mksports.com">MK体育</a> 添加至手机桌面（通过浏览器菜单），即可像本地应用一样快速打开，免去每次输入网址的步骤。</p>
+        </div>
+
+        <!-- 可信但克制的访问说明 -->
+        <h2>访问说明 · 几点提示</h2>
+        <ul>
+            <li>主站采用标准 HTTPS 连接，数据传输经过加密。建议在稳定的网络环境下使用。</li>
+            <li>平台不存储敏感个人账户信息（除非你主动注册或登录，但本说明页不涉及注册引导）。</li>
+            <li>页面中的外部链接会以显式方式标记，点击前可留意地址栏预览。</li>
+            <li>维护或升级时段可能短暂影响访问，通常会在页面顶部显示提示条。</li>
+            <li>如遇到加载异常，可尝试刷新或清除浏览器缓存后再试。持续无法访问时，建议稍后再试。</li>
+        </ul>
+
+        <div class="tip-note">
+            <span style="font-size:1.2rem; line-height:1;">💡</span>
+            <div><strong>稳定入口建议：</strong> 请直接将 <a href="https://m-online-mksports.com">MK体育</a> 添加至浏览器书签。避免通过非官方的第三方链接进入，以降低信息混淆的风险。</div>
+        </div>
+
+        <!-- FAQ 摘要 -->
+        <h2>常见疑问（FAQ 摘要）</h2>
+        <div class="faq-item">
+            <div class="faq-question">❓ 是否需要注册才能浏览内容？</div>
+            <div class="faq-answer">大部分信息板块（赛事数据、新闻列表等）无需登录即可查阅。部分互动功能（如评论、收藏）可能需要注册账号，具体以页面实际提示为准。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">❓ 移动端和桌面端体验差异大吗？</div>
+            <div class="faq-answer">布局上会自适应，移动端采用纵向滚动与精简导航，桌面端显示更多信息列。核心数据和功能保持一致。</div>
+        </div>
+        <div class="faq-item">
+            <div class="faq-question">❓ 页面加载速度如何？</div>
+            <div class="faq-answer">图片和动态内容经过压缩与懒加载优化，在普通宽带或 4G/5G 网络下均可顺畅打开。首次加载可能略慢，后续浏览会更快。</div>
+        </div>
+
+        <div class="footer-note">
+            <p>此页面为产品说明页，非 MK体育 官方运营页面。内容仅供了解与参考。直接访问 <a href="https://m-online-mksports.com">MK体育</a> 以获取最新信息。</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
